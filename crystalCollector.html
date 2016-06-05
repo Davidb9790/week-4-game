@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<!-- google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700italic' rel='stylesheet' type='text/css'>
+	<!-- Latest compiled and minified CSS// BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- jQuery -->
+	<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="assets/js/crystalCollector.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<!-- Row 1 -->
+
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="crystalCollector"> Crystals Collector!</h1>
+		</div>
+	</div>	
+
+	<!-- row 2 -->
+	<div class="row">
+		<div class="col-md-6">
+			<p class="instructions">
+			-You will be given a random number at the start of the game.
+			<br>
+			<br>
+			-There are four crystals below. By clicking on a crystal you will add a specific amount of pointstoyour total score.
+			<br>
+			<br>
+			-You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+			<br>
+			<br>
+			-The value of each crystal is hidden fromyou until you click on it.
+			Each time when the game starts, the game will change the values of each crystal</p>
+		</div>
+	</div>
+	
+	<!-- row 3 -->
+	<div class="row">
+		<div class="col-xs-4">
+			<p class="randomNumber">
+			Random Number Generator goes here.
+			19- 120
+			</p>
+		</div>
+
+		<div class="col-xs-8">
+			<p class="winsLosses">
+				Wins:
+				<br>
+				Losses:
+			</p>
+		</div>
+
+	</div>
+	
+		<!-- row 4 -->
+	<div class="row">
+		<div class="col-md-2">
+	<!-- 	<img src="assets/images/crystal1.jpg" alt="Crystal1" style="width:150px;height:150px;">
+		</div> -->
+		<input type="image" class="crystal1" name="submit" value="submit" src="assets/images/crystal1.jpg" style="width:150px;height: 150px;">
+		</div>
+
+		<div class="col-xs-2">
+		<!-- <img src="assets/images/crystal2.png" alt="Crystal2" style="width:150px;height:150px;"> -->
+		<input type="image" class="crystal2" name="submit" value="submit" src="assets/images/crystal2.png" style="width:150px;height: 150px;">
+		</div>
+	<!-- 	<div class="col-xs-2">
+		<img src="assets/images/crystal3.jpg" alt="Crystal3" style="width:150px;height:150px;">
+		</div>
+		 -->
+		<div class="col-xs-2">
+		<!-- <img src="assets/images/crystal4.png" alt="Crystal4" style="width:150px;height:150px;"> -->
+		<input type="image" class="crystal3" name="submit" value="submit" src="assets/images/crystal3.jpg" style="width:150px;height: 150px;">
+		</div>
+		<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+		<!-- <button type="button" class="btn btn-primary">Primary</button> -->
+		<div>
+		<input type="image" class="crystal4" name="submit" value="submit" src="assets/images/crystal4.png" style="width:150px;height: 150px;">
+		<!-- <div class="text-center"> -->
+		<!-- </div> -->
+        <!-- Here we have our button with id randomButton -->
+       <!--  <button id="randomButton" class="btn btn-primary btn-lg"><h1><span class="glyphicon glyphicon-question-sign"></span></h1></button> -->
+    </div>
+	
+	</div>
+		
+		<!-- row 5 -->
+	<div class="row">
+		<div class="col-md-3">
+			<p class="score"> Your total Score is:</p>
+		</div>
+
+	</div>
+		
+		<!-- row 6 -->
+	<div class="row">
+		<div class="col-md-3">
+		<p class="result">
+		Result Here
+		</p>
+		</div>
+	</div>
+
+</body>
+</html>
