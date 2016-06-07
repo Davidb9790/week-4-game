@@ -26,7 +26,7 @@ var numberToGuess = Math.floor(Math.random() * 120) + 19;
     // When randomButton is clicked...
     $(".crystal1, .crystal2, .crystal3, .crystal4").on("click", function(){
         // Generate a random number
-        var random = Math.floor(Math.random() * 1) +1;  
+        var random = Math.floor(Math.random() * 12) +1;  
         counter = counter + random;
         // Then dump the random number into our randomNumber div. 
         $('.result').html(counter);
