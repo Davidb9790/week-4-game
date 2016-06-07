@@ -2,49 +2,63 @@ body{
 	background-image: url("../images/pattern4.jpg");
 }
 .crystalCollector{
-	color:black;
-	background-color: white;
+	background-color: #a94442;
+	color: aliceblue;
+	opacity:.90	;
 	float: left;
 	font-size: 48px;
 	padding: 15px;
-	opacity: .75;
 	font-family: 'Oswald', sans-serif;
 }
 .instructions{
-	 background-color: #81DAF5;
+	 background-color: #a94442;
+	 color: aliceblue;
+	 opacity: .90;*/
 	 padding-top: 15px;
 	 padding-bottom: 50px;
 	 font-weight: bold;
 	 font-size: 16px;
-	 
+	 padding: 15px;
 	 font-family: 'Droid Serif', serif;
 }
 .randomNumber{
+	background-color: #a94442;
+	color: aliceblue;
+	opacity: .90;
 	height: 150px;
 	width: 350px;
-	background-color: #81DAF5;
+	padding-top: 15px;
 	font-size: 26px;
 	text-align: center;
 	vertical-align: center;
 	line-height: 25px;
+	 
 
 }
 .winsLosses{
+	background-color: #a94442;
+	color: aliceblue;
+	opacity: .90;
 	height: 150px;
 	width: 150px;
-	background-color: #81DAF5;
+	padding: 15px;
 	font-size: 24px;
 	font-family: 'Droid Serif', serif;
 }
 .score{
-	background-color: #81DAF5;
+	background-color: #a94442;
+	color: aliceblue;
+	opacity: .90;
 	margin-top: 10px;
 	font-size: 24px;
 	font-family: 'Droid Serif', serif;
+	padding: 15px;
 }
 .result{
-	background-color: #81DAF5;
-	/*margin-top: 10px;*/
+	background-color: #a94442;
+	color: aliceblue;
+	opacity: .90;
+	padding: 15px;	
 	height: 150px;
 	font-size: 24px;
 	font-family: 'Droid Serif', serif;
