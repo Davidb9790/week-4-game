@@ -35,7 +35,17 @@ body{
 	 
 
 }
-.winsLosses{
+.wins{
+	background-color: #a94442;
+	color: aliceblue;
+	opacity: .90;
+	height: 150px;
+	width: 150px;
+	padding: 15px;
+	font-size: 24px;
+	font-family: 'Droid Serif', serif;
+}
+.losses{
 	background-color: #a94442;
 	color: aliceblue;
 	opacity: .90;

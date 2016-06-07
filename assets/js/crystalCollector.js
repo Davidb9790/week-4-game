@@ -15,16 +15,23 @@ console.log(numbers.length);
 //         $('.randomNumber').html(numberToGuess);
 //     });
 
+
 $(document).ready(function(){
      var wins = 0;
      var losses = 0;
-   
-var numberToGuess = Math.floor(Math.random() * 120) + 19;  
+     
+   var numberToGuess = Math.floor(Math.random() * (120 - 19 +1)) + 19;  
     // Then dump the random number into our randomNumber div. 
     $('.randomNumber').html(numberToGuess);
+
+    //crystals her before 
+    $(".crystal1, .crystal2, .crystal3, .crystal4").on("click", function(){   
+    
+    $('.wins').text("Wins: " + wins);
+
+    $('.losses').text("Losses: "+ losses);
     
     // When randomButton is clicked...
-    $(".crystal1, .crystal2, .crystal3, .crystal4").on("click", function(){
         // Generate a random number
         var random = Math.floor(Math.random() * 12) +1;  
         counter = counter + random;
@@ -33,59 +40,13 @@ var numberToGuess = Math.floor(Math.random() * 120) + 19;
 
         if (counter === numberToGuess){
             wins++;
-            // alert('You won!!!!');
+            alert('You won!!!!');
         }else if( counter > numberToGuess){
             losses++;
+            numberToGuess=Math.floor(Math.random()*(120 - 19 + 1))+19;
+            $('.randomNumber').text(numberToGuess);
+            counter=0;
            alert('Unfortunately, you lost my friend =(');
       };
     });
-
-    
-   
-    // When randomButton crystal2 is clicked...
-    // $(".crystal2").on("click", function(){
-    //     // Generate a random number
-    //     var random = Math.floor(Math.random() * 12) + 1;  
-    //     // Then dump the random number into our randomNumber div. 
-    //     $('.result').html(random);
-    // });
-   
-    // When randomButton crystal3 is clicked...
-    // $(".crystal3").on("click", function(){
-    //     // Generate a random number
-    //     var random = Math.floor(Math.random() * 12) + 1;  
-    //     counter = counter + random;
-    //     // Then dump the random number into our randomNumber div. 
-    //     $('.result').html(random);
-    // });
-   
-    // // When randomButton crystal4 is clicked...
-    // $(".crystal4").on("click", function(){
-    //     // Generate a random number
-    //     var random4 = Math.floor(Math.random() * 12) + 1;
-    //     //counter = 0 in large scope, this adds the random number to itself but different number is generated each time
-    //     counter = counter + random4;  
-    //     // Then dump the random number into our randomNumber div. 
-    //     $(".result").html(counter);
-
-        // wins here
-         
-    
-    
-    });
-// });
-
-
-//add later
-// if (counter === numberToGuess){
-//             alert('You Won! Congratulations')
-//         }else if (counter>numberToGuess){
-//             alert('Unfortunately you just lost the game.=(')
-//         }
-
-
-     // if (counter == numberToGuess){
-     //    alert('You won!!!!');
-     //  }else if( counter > numberToGuess){
-     //    alert('You lost!');
-     //  }
+});
