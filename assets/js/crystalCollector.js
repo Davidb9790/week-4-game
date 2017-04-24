@@ -20,7 +20,8 @@ $(document).ready(function(){
      var wins = 0;
      var losses = 0;
      
-   var numberToGuess = Math.floor(Math.random() * (120 - 19 +1)) + 19;  
+   var numberToGuess = Math.floor(Math.random() * (120 - 19 +1)) + 19; 
+   var random = Math.floor(Math.random() * 12) +1; 
     // Then dump the random number into our randomNumber div. 
     $('.randomNumber').html(numberToGuess);
 
@@ -33,7 +34,7 @@ $(document).ready(function(){
     
     // When randomButton is clicked...
         // Generate a random number
-        var random = Math.floor(Math.random() * 12) +1;  
+          
         counter = counter + random;
         // Then dump the random number into our randomNumber div. 
         $('.result').html(counter);
