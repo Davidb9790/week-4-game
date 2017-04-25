@@ -20,17 +20,21 @@ $(document).ready(function(){
      var wins = 0;
      var losses = 0;
      
-   var numberToGuess = Math.floor(Math.random() * (120 - 19 +1)) + 19; 
-   var random = Math.floor(Math.random() * 12) +1; 
+     //random coding goes here
+     var numberToGuess = Math.floor(Math.random() * (120 - 19 +1)) + 19; 
+
     // Then dump the random number into our randomNumber div. 
     $('.randomNumber').html(numberToGuess);
 
-    //crystals her before 
+    //crystals here before 
     $(".crystal1, .crystal2, .crystal3, .crystal4").on("click", function(){   
     
-    $('.wins').text("Wins: " + wins);
+      //generates random number per click
+      var random = Math.floor(Math.random() * 12) +1; 
 
-    $('.losses').text("Losses: "+ losses);
+      $('.wins').text("Wins: " + wins);
+
+      $('.losses').text("Losses: "+ losses);
     
     // When randomButton is clicked...
         // Generate a random number
