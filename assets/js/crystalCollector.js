@@ -20,7 +20,7 @@ $(document).ready(function(){
      var wins = 0;
      var losses = 0;
      
-     //random coding goes here
+     //random number coding goes here
      var numberToGuess = Math.floor(Math.random() * (120 - 19 +1)) + 19; 
 
     // Then dump the random number into our randomNumber div. 
